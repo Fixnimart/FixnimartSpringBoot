@@ -1,0 +1,19 @@
+package com.fixnimart.repository;
+
+import com.fixnimart.model.Product;
+
+import java.util.List;
+import java.util.UUID;
+
+public interface IProductRepository {
+
+    public List<Product> getAll();
+    
+    public Product getById(UUID id);
+
+    public int create(Product product);
+
+    public int update(Product product);
+
+    public int delete(UUID id);
+}
